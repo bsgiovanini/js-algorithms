@@ -1,0 +1,19 @@
+{
+  "name": "binary-search-union",
+  "version": "1.0.0",
+  "description": "binary search algorithm for sorted arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "bsgiovanini",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^18.0.0",
+    "babel-polyfill": "^6.20.0",
+    "jest": "^18.1.0"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
