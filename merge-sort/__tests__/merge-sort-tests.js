@@ -46,6 +46,17 @@ test('should sort an array', () => {
     }()).arraysToBeEqual([2,5,7,8]);
 });
 
+test('should sort an array bottom up', () => {
+    expect(function() {
+      const m = new MergeSort([2,3]);
+      return m.sortBottomUp();
+    }()).arraysToBeEqual([2,3]);
+    expect(function() {
+      const m = new MergeSort([2,7,5,8]);
+      return m.sortBottomUp();
+    }()).arraysToBeEqual([2,5,7,8]);
+});
+
 
 
 

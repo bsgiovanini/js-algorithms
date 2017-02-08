@@ -52,5 +52,17 @@ export default class MergeSort {
         
     }
     
+    sortBottomUp() {
+        const N = this.array.length;
+        
+        for(let sz = 1; sz < N; sz = sz+sz) {
+            for(let lo = 0; lo < N-sz; lo += sz+sz) {
+                this.merge(this.array, lo, lo+sz-1, Math.min(lo+sz+sz-1, N-1));
+            }
+        }
+        
+        return this.array;
+    }
+    
     
 }
